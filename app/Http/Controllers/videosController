@@ -1,0 +1,12 @@
+class Videos_Controller extends Base_Controller
+{
+public $restful = true;
+
+	public function get_index()
+	{
+	    $videos = DB::table('videos')->get();
+	    return View::make('videos.index')
+	        ->with('title', 'Videos')
+	        ->with('videos', $videos);
+	}
+}

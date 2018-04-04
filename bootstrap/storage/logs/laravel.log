@@ -1,0 +1,23 @@
+[2018-02-02 00:01:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /var/www/CEA/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:165)
+[stacktrace]
+#0 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(99): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(87): Illuminate\\Log\\LogManager->get(NULL)
+#2 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(436): Illuminate\\Log\\LogManager->driver()
+#3 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(113): Illuminate\\Log\\LogManager->error('The \"\" director...', Array)
+#4 /var/www/CEA/app/Exceptions/Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(InvalidArgumentException))
+#5 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(352): App\\Exceptions\\Handler->report(Object(InvalidArgumentException))
+#6 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(123): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(InvalidArgumentException))
+#7 /var/www/CEA/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2018-02-02 00:01:08] laravel.ERROR: The "" directory does not exist. {"exception":"[object] (InvalidArgumentException(code: 0): The \"\" directory does not exist. at /var/www/CEA/vendor/symfony/finder/Finder.php:539)
+[stacktrace]
+#0 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(87): Symfony\\Component\\Finder\\Finder->in(false)
+#1 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(64): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getConfigurationFiles(Object(Illuminate\\Foundation\\Application))
+#2 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#3 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(213): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#4 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(296): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#5 /var/www/CEA/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(119): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 /var/www/CEA/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
